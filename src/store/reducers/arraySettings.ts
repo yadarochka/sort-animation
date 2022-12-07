@@ -1,5 +1,4 @@
 import { createSlice, PayloadAction } from "@reduxjs/toolkit";
-import { RootState } from "..";
 
 interface ArraySettingsState {
   array: number[];
@@ -27,6 +26,5 @@ export const arraySettingsSlice = createSlice({
 export const { setArray, setLength } = arraySettingsSlice.actions;
 
 // Other code such as selectors can use the imported `RootState` type
-export const selectCount = (state: RootState) => state.counter.value;
 
 export default arraySettingsSlice.reducer;

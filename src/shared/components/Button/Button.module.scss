@@ -1,16 +1,17 @@
+@import "../../../global.module.scss";
 .button {
   height: 4rem;
   padding: 0 1.6rem;
   font-weight: 600;
   background-color: #fff;
-  border: 0.1rem solid cyan;
+  border: 0.1rem solid $primary_color;
   border-radius: 0.5rem;
   cursor: pointer;
   &:hover {
     background-color: lightgray;
   }
-  &active {
+  &:active {
     color: #fff;
-    background-color: cyan;
+    background-color: $primary_color;
   }
 }

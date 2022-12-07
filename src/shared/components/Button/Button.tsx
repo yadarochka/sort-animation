@@ -7,11 +7,17 @@ const cn = classnames.bind(styles);
 
 type ButtonProps = {
   text: string;
-  className: string;
+  className?: string;
   onClick: () => void;
+  otherProps?: string[];
 };
 
-const Button: FC<ButtonProps> = ({ text, className, onClick }) => {
+const Button: FC<ButtonProps> = ({
+  text,
+  className,
+  onClick,
+  ...otherProps
+}) => {
   return (
     <button onClick={onClick} className={cn("button", className)}>
       {text}
