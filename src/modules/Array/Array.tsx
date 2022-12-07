@@ -2,7 +2,7 @@ import React from "react";
 
 import Bar from "./Bar/Bar";
 import styles from "./Array.module.scss";
-import createArray from "../../utils/createArray";
+import { createArray } from "../../utils";
 
 const WIDTH_MULTIPLIER = window.screen.width;
 const ARRAY = createArray(30);
