@@ -5,7 +5,7 @@ export const createArray = (lenght: number): number[] => {
   const array = [];
 
   for (let i = 0; i < lenght; i++) {
-    array.push(randomIntFromInterval(100, 1000));
+    array.push(randomIntFromInterval(1, 80));
   }
 
   return array;
