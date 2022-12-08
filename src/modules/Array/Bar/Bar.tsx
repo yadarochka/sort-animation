@@ -8,7 +8,7 @@ type BarProps = {
 
 const Bar: FC<BarProps> = ({ width, height }) => {
   const barStyles = {
-    height: `${height}px`,
+    height: `${height}%`,
     width: `${width}px`,
   };
 
