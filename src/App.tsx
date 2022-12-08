@@ -1,12 +1,12 @@
 import React from "react";
 import Array from "./modules/Array";
-import ResetButton from "./modules/Controls/ResetButton.tsx/ResetButton";
 import styles from "./App.module.scss";
+import { Controls } from "./modules/Controls";
 
 const App = () => {
   return (
     <div className={styles.app}>
-      <ResetButton />
+      <Controls />
       <Array />
     </div>
   );
